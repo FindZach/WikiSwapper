@@ -1,6 +1,6 @@
 # Wiki Swapper
 
-![Icon](icon.png)
+## ![Icon](icon-128.png)
 
 A sleek Chrome extension that lets you instantly swap between Wikipedia and Grokipedia, giving you control over your preferred knowledge source.
 
