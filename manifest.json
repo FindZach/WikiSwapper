@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Wiki Swapper",
+  "version": "1.1",
+  "description": "Instantly swap between Wikipedia and Grokipedia — your preferred wiki always wins",
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": ["webNavigation", "storage", "tabs"],
+  "host_permissions": [
+    "*://*.wikipedia.org/*",
+    "*://grokipedia.com/*",
+    "*://www.grokipedia.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
