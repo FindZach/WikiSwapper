@@ -1,0 +1,11 @@
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IntelliJ IDEA
+.idea/
+
+# Temporary files
+*.tmp
+*.swp

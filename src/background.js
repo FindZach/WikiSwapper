@@ -7,7 +7,7 @@ class SettingsManager {
     static async get() {
         const data = await chrome.storage.sync.get(['preferred', 'autoSwap']);
         return {
-            preferred: data.preferred || 'grokipedia',   // default = Grokipedia (your original wish)
+            preferred: data.preferred || 'grokipedia',   // default = Grokipedia
             autoSwap: data.autoSwap !== false            // default = true
         };
     }

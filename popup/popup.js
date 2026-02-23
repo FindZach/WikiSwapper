@@ -70,24 +70,6 @@ class Popup {
             if (newUrl) chrome.tabs.update(tab.id, { url: newUrl });
         });
     }
-
-    isWikipedia(url) {
-        return url.hostname.endsWith('wikipedia.org');
-    }
-
-    isGrokipedia(url) {
-        return url.hostname === 'grokipedia.com' || url.hostname === 'www.grokipedia.com';
-    }
-
-    extractTitle(url) {
-        let title = null;
-        if (this.isWikipedia(url) && url.pathname.startsWith('/wiki/')) {
-            title = url.pathname.slice(6);
-        } else if (this.isGrokipedia(url) && url.pathname.startsWith('/page/')) {
-            title = url.pathname.slice(6);
-        }
-        return title;
-    }
 }
 
 // Make it globally accessible for the inline onclick
